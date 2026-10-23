@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'theme/app_theme.dart';
 
 void main() {
   runApp(const QuizApp());
@@ -12,13 +13,12 @@ class QuizApp extends StatelessWidget {
     return MaterialApp(
       title: 'Kuis UTS PM',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        useMaterial3: true,
-      ),
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: ThemeMode.system,
       home: const Scaffold(
         body: Center(
-          child: Text('Setup Berhasil!'),
+          child: Text('Menunggu Halaman Utama...'),
         ),
       ),
     );
