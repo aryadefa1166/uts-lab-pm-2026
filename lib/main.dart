@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'theme/app_theme.dart';
+import 'screens/welcome_screen.dart';
 
 void main() {
   runApp(const QuizApp());
@@ -16,11 +17,7 @@ class QuizApp extends StatelessWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.system,
-      home: const Scaffold(
-        body: Center(
-          child: Text('Menunggu Halaman Utama...'),
-        ),
-      ),
+      home: const WelcomeScreen(),
     );
   }
 }
