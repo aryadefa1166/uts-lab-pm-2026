@@ -13,7 +13,7 @@ class AppTheme {
         brightness: Brightness.light,
       ),
       useMaterial3: true,
-      textTheme: GoogleFonts.poppinsTextTheme(),
+      fontFamily: GoogleFonts.poppins().fontFamily,
       scaffoldBackgroundColor: const Color(0xFFF5F7FA),
       appBarTheme: const AppBarTheme(
         backgroundColor: primaryColor,
@@ -32,7 +32,7 @@ class AppTheme {
         brightness: Brightness.dark,
       ),
       useMaterial3: true,
-      textTheme: GoogleFonts.poppinsTextTheme(ThemeData.dark().textTheme),
+      fontFamily: GoogleFonts.poppins().fontFamily,
       scaffoldBackgroundColor: const Color(0xFF121212),
       appBarTheme: const AppBarTheme(
         backgroundColor: Color(0xFF1E1E1E),
