@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/custom_button.dart';
+import 'quiz_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
@@ -24,12 +25,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
       return;
     }
 
-    // TODO: Navigasi ke Halaman Kuis
-
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text('Siap, $name! Halaman kuis sedang disiapkan.'),
-        backgroundColor: Colors.green,
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(
+        builder: (context) => QuizScreen(userName: name),
       ),
     );
   }
